@@ -1,10 +1,41 @@
+/* navbar css code  */
+.Navbar{
+    position: fixed;  /*When I add this 2 lines the height of slide is reduce*/
+    top: 0;
+    z-index: 999;
+    /* margin-bottom: 100px; */
+}
 
+.Contact-Navbar{
+    border-right: 2px solid gray; 
+}
 
 
 
 @media only screen and (max-width: 700px) {
 .Contact-Navbar{
-    border: none !important;
+    border: none;
     /* background-color: aqua; */
 }
 }
+
+/* slider css code start from here */
+.Slider{
+    position: relative;
+    /* top: 10px; */
+    /* left: 10000px; */
+    height: 90%;
+}
+
+/* .SlderDotted{
+    background-color: #FFBB31;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 20%;
+    left: 68%;
+}
+.SliderHeading{
+    position: relative;
+} */
