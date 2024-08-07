@@ -1,9 +1,14 @@
+:root{
+    --TextColorYellow :#FFBB31;
+    --TextColorGray:#8B8B8B;
+    --LeftRightPadding: 0 50px;
+}
+
 /* navbar css code  */
 .Navbar{
     position: fixed;  /*When I add this 2 lines the height of slide is reduce*/
     top: 0;
     z-index: 999;
-    /* margin-bottom: 100px; */
 }
 
 .Contact-Navbar{
@@ -15,27 +20,195 @@
 @media only screen and (max-width: 700px) {
 .Contact-Navbar{
     border: none;
-    /* background-color: aqua; */
 }
 }
 
-/* slider css code start from here */
-.Slider{
+
+/* home section 2 code start from here  */
+
+ .section-2-1 ul .Active{
+    color:var(--TextColorYellow) ;
+    border-bottom: 2px solid var(--TextColorYellow);
+}
+ .section-2-1 ul a{
+    text-decoration: none;
+    color:var(--TextColorGray) ;
+    font-weight: 700;
+} 
+.section-2-1 ul a:hover{
+    color: var(--TextColorYellow);
+    border-bottom: 2px solid var(--TextColorYellow);
+}
+.section-2-2 .Images{
+    width: 30%;
+    height: 45vh;
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/1.jpg'), no-repeat;
+    background-size: cover;
     position: relative;
-    /* top: 10px; */
-    /* left: 10000px; */
-    height: 90%;
 }
 
-/* .SlderDotted{
-    background-color: #FFBB31;
-    width: 12px;
-    height: 12px;
-    position: absolute;
+.section-2-2 .Image1:hover :first-child{
+    opacity: 0.8;
+}
+.section-2-2 .Image2:hover :first-child{
+    opacity: 0.8;
+}
+.section-2-2 .Images .Shadow {
+    transition: opacity 0.5s ease;
+}
+.section-2-2 .Image2{
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/2.jpg'), no-repeat;
+    background-size: cover;
+}
+.section-2-2 .Image-3-1{
+    width: 80%;
+    height: 45%;
+    background: url('https://deothemes.com/envato/sedona/html/img/portfolio/masonry/3.jpg'), no-repeat;
+    background-size: cover;
+}
+.section-2-2 .Image-3-1:hover :first-child{
+    opacity: 0.8;
+}
+.section-2-2 .Image-3-2{
+    background-image: url("https://deothemes.com/envato/sedona/html/img/portfolio/masonry/4.jpg");
+}
+.section-2-2 .Image3{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.section-2-2 .Images .Shadow{
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0px;
+    padding-left: 15px;
+
+} 
+
+
+@media (min-width: 611px) and (max-width: 767px) {
+    .section-2-2 .Images{
+        width: 70%;
+        height: 90vh;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 610px) {
+        .section-2-2 .Images{
+            width: 70%;
+            height: 70vh;
+    }
+}
+@media  (min-width: 250px) and (max-width: 450px) {
+        .section-2-2 .Images{
+            width: 100%;
+            height: 70vh;
+    }
+}
+
+/* home section 3 start from here  */
+
+.section-3-1{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('https://deothemes.com/envato/sedona/html/img/testimonials/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+.section-3-1 .Graph1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-3-1 .Graph1 .hd1{
+    color: #FFBB31;
+}
+.section-3-1 .section-3-1-1 span{
+    color: var(--TextColorYellow);
+}
+.section-3-1 .section-3-1-1 i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* home section 4 start from here */
+
+.section-4-1 h2{
+    color: var(--TextColorYellow);
+}
+
+.section-4-1 .Card{
+    background-color: var(--TextColorYellow);
+}
+
+
+.section-4-2 .Card h3:hover{
+    color: var(--TextColorYellow);
+    cursor: pointer;
+}
+.section-4-2 .Card p:hover{
+    cursor: pointer;
+}
+.section-4-2 .third p:hover{
+    color: black;
+    cursor: pointer;
+}
+.section-4-2 .third span{
+    background-color: var(--TextColorGray);
+    color: white;
+    margin-right: 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
     border-radius: 50%;
-    bottom: 20%;
-    left: 68%;
+  
 }
-.SliderHeading{
-    position: relative;
+@media only screen and (max-width: 441px) {
+    .section-4-1 .Card{
+        height: 20vh;
+    }
+}
+
+/* footer start from here */
+
+
+/* .Footer{
+    padding: var(--LeftRightPadding);
 } */
+.Footer-main{
+    background-image: 
+    linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%),
+    url('https://deothemes.com/envato/sedona/html/img/footer/1.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    /* display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    margin-bottom: 1px ; */
+}
+.Footer ul{
+    list-style: none;
+} 
+.Footer ul a{
+    text-decoration: none;
+    color: var(--TextColorGray);
+    line-height: 2.5rem;
+} 
+.Footer ul a:hover{
+    color: var(--TextColorYellow);
+    cursor: pointer; 
+}
+.Social-logo i:hover{
+color: var(--TextColorYellow);
+}
